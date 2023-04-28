@@ -1,0 +1,405 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+
+.top {
+    width: 100%;
+    height: 7vh;
+    background-color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    color: #505050;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+    position: fixed;
+}
+
+.img,
+.img2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background-image: url(Gene.jpg);
+    background-size: contain;
+    margin-left: 3vh;
+}
+
+.name {
+    margin: 0 auto 0 1vh;
+    font-size: 10px;
+    cursor: grabbing;
+}
+
+li {
+    display: inline;
+    font-size: 10px;
+    padding: 17px;
+    cursor: pointer;
+}
+
+li a {
+    text-decoration: none;
+    color: #505050;
+}
+
+li:hover {
+    background-color: rgba(0, 0, 0, 0.319);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #0a192f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+
+.maintext,
+.maintext2 {
+    margin: 20px;
+    color: #ffffff;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+    line-height: 2;
+    cursor: alias;
+}
+
+.maintext {
+    font-size: 70px;
+    word-spacing: 40px;
+}
+
+.maintext2 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    width: 50%;
+}
+
+.downshape {
+    width: 20%;
+    position: relative;
+    top: 100px;
+    background-color: cornsilk;
+    padding: 10px;
+    opacity: 0.5;
+    color: #0a192f;
+    text-align: center;
+    cursor: not-allowed;
+}
+
+.submain {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    opacity: 1.0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row wrap;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    cursor: pointer;
+    color: #706f6f;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.submaintext {
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.downshape:hover,
+.servshape:hover,
+.shapeform:hover {
+    opacity: 0.8;
+}
+
+.projects {
+    width: 100%;
+    height: 120vh;
+    background-color: rgba(44, 43, 43, 0.933);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    scroll-behavior: smooth;
+}
+
+.chop,
+.temp1,
+.temp2,
+.google,
+.scorecardimg,
+.webpageimg {
+    width: 30%;
+    height: 50vh;
+    margin: 20px;
+    opacity: 0.3;
+}
+
+.chop:hover,
+.temp1:hover,
+.temp2:hover,
+.google:hover,
+.scorecardimg:hover,
+.webpageimg:hover {
+    opacity: 1.0;
+}
+
+.services {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #0a192f;
+    color: #505050;
+    scroll-behavior: smooth;
+}
+
+.servshape,
+.shapeform {
+    width: 20%;
+    height: 5vh;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #0a192f;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    padding: 12px;
+    text-align: center;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.textservices {
+    color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    font-size: 30px;
+    padding: 20px;
+    cursor: crosshair;
+}
+
+.servicestext {
+    color: #7c7a7a;
+    width: 97%;
+    font-size: 20px;
+    cursor: crosshair;
+}
+
+
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    font-size: 15px;
+    background-color: #152236;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #ada8a8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    cursor: pointer;
+    scroll-behavior: smooth;
+}
+
+
+form {
+    width: 50%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.shapeform {
+    width: 20%;
+    height: 5vh;
+    margin: 30px;
+}
+
+input {
+    width: 20%;
+    height: 5vh;
+    background-color: #0a192f;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+}
+textarea{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 30vh;
+    background-color: #505050;
+    color: white;
+}
+
+/* input {
+    transition: 1s ease-in-out;
+}
+
+input:focus {
+    width: 100%;
+} */
+input[type="submit"]{
+    width: 100%;
+    background-color: #505050;
+}
+select {
+    width: 20%;
+    height: 5vh;
+    background-color: #0a192f;
+    color: #505050;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+}
+
+.leftshape {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: 10px;
+    width: 100vw;
+
+}
+
+.leftshape>a {
+    color: #ada8a8;
+    letter-spacing: 10px;
+    text-decoration: none;
+}
+
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #505050;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-style: italic;
+    cursor: crosshair;
+}
+
+.img2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: url(Gene.jpg);
+    background-size: contain;
+    cursor: e-resize;
+}
+
+@media screen and (max-width: 425px) {
+    ul {
+        width: 100%;
+        margin-top: -9px;
+    }
+
+    .maintext {
+        width: 100%;
+        font-size: 30px;
+        color: #ffffff;
+        letter-spacing: 0px;
+        word-spacing: 10px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .maintext2 {
+        width: 90%;
+        font-size: 15px;
+        text-align: center;
+        color: #ffffff;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+    }
+
+    .downshape {
+        width: 50%;
+    }
+
+    .submaintext {
+        width: 90%;
+    }
+
+    .projects {
+        width: 100%;
+        height: 50%;
+    }
+
+    .chop,
+    .temp1,
+    .temp2,
+    .google,
+    .scorecardimg,
+    .webpageimg {
+        width: 70%;
+    }
+
+    .textservices {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .servicestext {
+        margin-left: 30px;
+    }
+
+    .servshape,
+    .shapeform {
+        width: 40%;
+        height: 5vh;
+        padding: 15px;
+    }
+   textarea{
+    width: 100%;
+    height: 20vh;
+   }
+
+    input,
+    select {
+        width: 30%;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    .leftshape {
+        width: 100%;
+        margin-top: 50px;
+    }
+}
