@@ -117,6 +117,12 @@ li:hover {
     text-align: center;
     cursor: not-allowed;
 }
+@media screen and (max-width:650px) {
+    .downshape{
+        top: 0px;
+    }
+    
+}
 
 .submain {
     width: 100%;
